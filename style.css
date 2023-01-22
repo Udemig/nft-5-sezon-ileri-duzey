@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  font-family: 'Inter';
+  padding: 0 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+header > nav {
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  font-size: 19px;
+  transition: color 0.4s, text-shadow 0.4s;
+  cursor: pointer;
+}
+header nav a:hover {
+  color: rgb(255, 0, 200);
+  text-shadow: 3px 3px 15px rgb(255, 0, 200);
+  transition: all 0.4s;
+}
+
+header button {
+  padding: 15px 20px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+
+/* KARŞILAMA ALANI */
+
+.hero {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.image {
+  max-width: 500px;
+}
+.slogan {
+  max-width: 600px;
+}
+.slogan-text {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+.slogan-text button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+.slogan-text button:hover {
+  background-image: linear-gradient(180deg, #21d4fd 0%, #b721ff 100%);
+}
+.slogan h1 {
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 600;
+}
+
+.slogan h1 span {
+  color: #21d4fd;
+}
+/* MARKALAR */
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.drops-container {
+  margin-top: 100px;
+}
+.drops-container h1 {
+  font-size: 45px;
+}
+
+.category {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.category li {
+  list-style: none;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 90px;
+}
+
+/* KARTLAR ALANI */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+.card {
+  background-color: white;
+  width: 280px;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translate(10px, -10px);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h3 {
+  margin-top: 10px;
+}
+.info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.info .value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.value img {
+  max-width: 20px;
+}
+.value h5 {
+  color: #21d4fd;
+}
+.info .order {
+  font-size: 14px;
+  color: gray;
+}
+.time {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time button {
+  padding: 5px 10px;
+  background-color: white;
+  border: none;
+  font-weight: 700;
+  transition: background-color 0.5s, color 0.5;
+}
+.time button:hover {
+  background-color: gray;
+  border-radius: 10px;
+  color: #21d4fd;
+  transition: all 0.5s;
+}
